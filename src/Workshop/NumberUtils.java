@@ -5,14 +5,14 @@ import java.util.List;
 
 public class NumberUtils {
 
-    public static List<Integer> getEvenNumbers(int[] numbers) {
-        List<Integer> evenNumbers = new ArrayList<>();
+    public static List<Integer> getOddNumbers(int[] numbers) {
+        List<Integer> oddNumbers = new ArrayList<>();
 
         for (int number : numbers) {
-            if (number % 2 == 0) {
-                evenNumbers.add(number);
+            if (number % 2 == 1) {
+                oddNumbers.add(number);
             }
         }
-        return evenNumbers;
+        return oddNumbers;
     }
 }
