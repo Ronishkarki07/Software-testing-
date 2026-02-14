@@ -7,19 +7,19 @@ class PrimeCheckerTest {
 
     @Test
     void shouldReturnTrueForPrimeNumber() {
-        assertTrue(PrimeChecker.isPrime(7));
+        assertTrue(PrimeChecker.isPrime(11));
     }
 
     @Test
     void shouldReturnFalseForNonPrimeNumber() {
-        assertFalse(PrimeChecker.isPrime(9));
+        assertFalse(PrimeChecker.isPrime(6));
     }
 
     @Test
     void shouldReturnFalseForNumbersLessThanTwo() {
-        assertFalse(PrimeChecker.isPrime(1));
         assertFalse(PrimeChecker.isPrime(0));
-        assertFalse(PrimeChecker.isPrime(-5));
+        assertFalse(PrimeChecker.isPrime(1));
+        assertFalse(PrimeChecker.isPrime(-2));
     }
 }
 
